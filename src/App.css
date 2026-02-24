@@ -37,6 +37,13 @@
   padding: 2em;
 }
 
+.install-note {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #cde3ff;
+  font-size: 0.95rem;
+}
+
 .read-the-docs {
   color: #888;
 }

@@ -18,6 +18,12 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+        {count === 0 && (
+          <p className="install-note">
+            📱 This app is PWA-ready. On mobile, use your browser menu and tap
+            "Add to Home Screen" to install it.
+          </p>
+        )}
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
