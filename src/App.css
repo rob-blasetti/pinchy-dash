@@ -1,40 +1,39 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 640px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #181c24;
+  color: #fff;
+}
+
+.page-content {
+  flex: 1;
+  padding: 1.5rem 1rem 6rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  margin-top: 0;
 }
 
 .card {
-  padding: 2em;
+  background: #232a36;
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .install-note {
@@ -44,6 +43,33 @@
   font-size: 0.95rem;
 }
 
-.read-the-docs {
-  color: #888;
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #11151c;
+  border-top: 1px solid #2e3442;
+}
+
+.nav-item {
+  border: 1px solid #3a4355;
+  background: #1a202c;
+  color: #cfd8ea;
+  border-radius: 10px;
+  padding: 0.65rem 0.5rem;
+}
+
+.nav-item.active {
+  border-color: #7ea3ff;
+  color: #fff;
+  background: #2b3f73;
+}
+
+button {
+  cursor: pointer;
 }
